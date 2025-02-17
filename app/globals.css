@@ -11,3 +11,19 @@
   font-family: var(--font-playfair);
 }
 
+@layer base {
+  @font-face {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Times New Roman"), local("Times"), serif;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

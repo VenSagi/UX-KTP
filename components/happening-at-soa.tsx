@@ -11,26 +11,31 @@ const events = [
     title: "Fall 2024 Archive",
     href: "#",
   },
-]
+];
 
 export function HappeningAtSoa() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl font-playfair mb-8">Happening at SOA</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+    <section className="py-16 bg-[#FFFCFB] text-[#4B4A4A]">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        {/* Section Title */}
+        <h2 className="text-3xl font-times font-bold border-b border-black pb-2 inline-block">
+          Happening at SOA
+        </h2>
+
+        {/* Links Section */}
+        <div className="grid md:grid-cols-3 gap-6 mt-4 text-lg font-times">
           {events.map((event) => (
             <a
               key={event.title}
               href={event.href}
-              className="block p-6 bg-white shadow-sm hover:shadow-md transition-shadow"
+              className="block text-[#4B4A4A] hover:underline flex items-center space-x-2"
             >
-              <h3 className="text-lg font-medium text-gray-900">{event.title}</h3>
+              <span>{event.title}</span>
+              <span>→</span> {/* Arrow Symbol */}
             </a>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-

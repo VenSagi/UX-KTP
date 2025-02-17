@@ -2,23 +2,21 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative h-[600px]">
+    <section className="relative h-screen">
       <Image
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Desktop%20-%202-tPk3gyQHeDPpVstGMt40AcG0oUXtt9.png"
+        src="/2024-Botanical-ag-doc-2877-0024-pub-2@2x.svg"  // Use relative path from /public folder
         alt="Yale School of Art Gallery"
-        fill
-        className="object-cover"
+        layout="fill" // Use layout="fill" instead of fill
+        objectFit="cover" // Ensures image covers the section
+        objectPosition="center top"
         priority
       />
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
-        <div className="max-w-3xl mx-auto text-white">
-          <p className="text-sm">
-            The School of Art is one of Yale's Graduate & Professional Schools conferring MFA degrees in Graphic Design,
-            Painting/Printmaking, Photography, and Sculpture, and preliminary-level studies in graphic design.
-          </p>
-        </div>
+      <div className="absolute bottom-12 left-[70px] w-[683px]">
+        <p className="font-inter text-[14px] font-normal text-black leading-snug tracking-wide">
+          The School of Art is one of Yale's Graduate & Professional Schools conferring MFA degrees in Graphic Design,
+          Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses to Yale College students.
+        </p>
       </div>
     </section>
   )
 }
-
