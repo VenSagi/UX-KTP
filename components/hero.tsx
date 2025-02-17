@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="relative h-[600px]">
       <Image
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Desktop%20-%202-tPk3gyQHeDPpVstGMt40AcG0oUXtt9.png"
+        src="/hero-image.png"
         alt="Yale School of Art Gallery"
         fill
         className="object-cover"
