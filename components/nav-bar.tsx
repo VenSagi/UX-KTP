@@ -23,13 +23,12 @@ export function NavBar() {
                 {item}
               </Link>
             ))}
-            <button className="p-2 hover:bg-gray-100 rounded-full">
-              <Search className="h-5 w-5" />
+            <button className="p-2 rounded-full">
+              <Search className="h-5 w-5 text-white drop-shadow-lg" />
             </button>
           </div>
         </div>
       </div>
     </nav>
-
   )
 }
