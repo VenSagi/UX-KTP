@@ -4,10 +4,10 @@ export function Hero() {
   return (
     <section className="relative h-screen">
       <Image
-        src="/2024-Botanical-ag-doc-2877-0024-pub-2@2x.svg"  // Use relative path from /public folder
+        src="/2024-Botanical-ag-doc-2877-0024-pub-2@2x.svg" 
         alt="Yale School of Art Gallery"
-        layout="fill" // Use layout="fill" instead of fill
-        objectFit="cover" // Ensures image covers the section
+        layout="fill"
+        objectFit="cover"
         objectPosition="center top"
         priority
       />
